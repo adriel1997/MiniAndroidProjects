@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/knapback"
+    tools:context="com.example.adriealle.ada_suduku_solver.Main2Activity">
+
+
+    <EditText
+        android:id="@+id/editText5"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Weight"
+        android:textColorHint="#ffffff"
+
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+
+         />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:textColorHint="#ffffff"
+
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:text="Solve" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:hint="No. of inputs"
+        android:layout_above="@+id/button"
+        android:textColorHint="#ffffff"
+
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/editText6"
+        android:layout_alignStart="@+id/editText6"
+        android:layout_marginBottom="22dp" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:hint="Bag size"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/editText8"
+        android:layout_alignBottom="@+id/editText8"
+        android:layout_alignRight="@+id/editText6"
+        android:layout_alignEnd="@+id/editText6" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text=""/>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000000"
+    tools:context="com.example.adriealle.musicplayer.MainActivity">
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/previous"
+        android:scaleType="fitCenter"
+        android:id="@+id/previous"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/play"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:id="@+id/play"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/previous"
+        android:layout_toEndOf="@+id/previous"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/next"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:id="@+id/next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/pause"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:id="@+id/pause"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/next"
+        android:layout_toStartOf="@+id/next"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_above="@+id/seekBar" />
+
+    <TextView
+        android:text="End"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ending"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/starting"
+        android:layout_alignBottom="@+id/starting"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
+
+    <TextView
+        android:text="Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/starting"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+
+    <SeekBar
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="69dp"
+        android:id="@+id/seekBar"
+        android:layout_above="@+id/previous"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="MUSIC PLAYER"
+        android:textAlignment="center"
+        android:background="#66cc80"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/textView3"
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
